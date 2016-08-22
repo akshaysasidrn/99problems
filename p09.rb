@@ -9,11 +9,10 @@ def pack array
 				j = j+1
 			end
 			sublist << array[j]
-			j = j+1
 		else
 			pack << array[j]
-			j = j+1
 		end
+		j = j+1
 	pack << sublist if sublist != []
 	end
 	print pack
