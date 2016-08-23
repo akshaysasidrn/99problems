@@ -4,7 +4,7 @@ puts "Enter the array"
 array = gets.split
 print "Index: "
 index = gets.strip.to_i
-for i in index..array.count-1
+for i in index..array.count-2
 	array[i] = array[i+1]
 end
 array[array.count-1] = nil
